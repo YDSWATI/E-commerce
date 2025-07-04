@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 32px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-logo img {
+    height: 32px; /* Smaller logo image */
+    width: auto;
+}
+
+.nav-logo p {
+    color: rgb(2, 20, 85);
+    font-size: 24px; /* Shorter logo text */
+    font-weight: 600;
+    margin: 0;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 32px; /* Reduced spacing between menu items */
+    color: rgb(2, 2, 42);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li:hover {
+    color: rgb(0, 2, 10);
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-login-cart button {
+    padding: 6px 12px;
+    background:white;
+    color: white;
+    border: 1px solid #7a7a7a;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 150px;
+    height: 48px;
+    color: #515151;
+    cursor: pointer;
+
+    
+
+}
+.nav-login-cart button:active {
+    background:#f3f3f3;
+}
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+.nav-login-cart img {
+    height: 24px;
+    width: auto;
+}
+
+/* Better placement using absolute positioning */
+.nav-cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    background: red;
+    color: white;
+}
+.nav-menu li {
+    cursor: pointer;
+    padding-bottom: 4px;
+    position: relative;
+}
+
+.nav-menu li.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(0, 0, 0); 
+}
+
+
+
+
+
+  
+
+
+
